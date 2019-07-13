@@ -1,0 +1,24 @@
+#sample program
+# available commands
+# A-out, A-in, B-out, B-in, C-out, C-in, D-out, D-in, E-out, E-in, F-out, F-in, ALU-A-in, ALU-B-in, ALU-out, ALU-sum, ALU-sub, ALU-mul, ALU-div, ALU-and, ALU-or, ALU-equ, ALU-shift, PC-reset, PC-in, PC-out, IR-in, IR-out, SP-in, SP-out, SREG-in, SREG-out, ID-in, ID-out
+
+main:
+    ldi regA, regB
+
+#machine-code
+
+#hex _ addr | data
+0x00 | 0x03
+0x01 | 0x01
+0x02 | 0x02
+
+#bin _ addr | data
+00000000 | 00000011
+00000001 | 00000001
+00000010 | 00000010
+
+#microcode
+
+ldi regA, regB =
+    | MR-out, IR-in |
+    | A-out, B-in   |

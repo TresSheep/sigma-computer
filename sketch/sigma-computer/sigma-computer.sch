@@ -1,0 +1,101 @@
+EESchema Schematic File Version 4
+LIBS:sigma-computer-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 650  1550 1050 1250
+U 5D32333B
+F0 "Registers_A-C" 50
+F1 "Registers_A-C.sch" 50
+$EndSheet
+$Sheet
+S 650  5100 2400 2550
+U 5D20A96B
+F0 "control_unit" 50
+F1 "control_unit.sch" 50
+$EndSheet
+Wire Notes Line
+	600  550  600  7700
+Wire Notes Line
+	600  7700 3100 7700
+Wire Notes Line
+	3100 550  600  550 
+Text Notes 1250 1500 0    404  ~ 0
+CPU
+$Sheet
+S 650  3000 2400 500 
+U 5D273310
+F0 "ALU" 50
+F1 "ALU.sch" 50
+$EndSheet
+$Sheet
+S 650  4400 2400 500 
+U 5D2739E4
+F0 "special-registers" 50
+F1 "special-registers.sch" 50
+$EndSheet
+$Sheet
+S 5100 3300 1800 500 
+U 5D23AB9B
+F0 "memory" 50
+F1 "memory.sch" 50
+$EndSheet
+Wire Notes Line
+	3100 7700 3100 550 
+Wire Notes Line
+	3150 550  3150 7700
+Wire Notes Line
+	5000 7700 5000 550 
+Wire Notes Line
+	3150 7700 5000 7700
+Wire Notes Line
+	3150 550  5000 550 
+Text Notes 3450 1500 0    404  ~ 0
+GPU
+Wire Notes Line
+	5050 550  5050 7700
+Wire Notes Line
+	5050 7700 6950 7700
+Wire Notes Line
+	6950 7700 6950 550 
+Wire Notes Line
+	6950 550  5050 550 
+Text Notes 5050 1400 0    207  ~ 0
+Motherboard
+$Sheet
+S 5100 1550 1800 1400
+U 5D28BFDE
+F0 "IDE" 50
+F1 "IDE.sch" 50
+$EndSheet
+$Sheet
+S 3200 1550 1750 6050
+U 5D28C0A7
+F0 "VGA" 50
+F1 "VGA.sch" 50
+$EndSheet
+$Sheet
+S 2000 1550 1050 1250
+U 5D28F068
+F0 "Registers_D-F" 50
+F1 "Registers_D-F.sch" 50
+$EndSheet
+$Sheet
+S 5100 4000 1800 750 
+U 5D29C836
+F0 "BIOS" 50
+F1 "BIOS.sch" 50
+$EndSheet
+$EndSCHEMATC
