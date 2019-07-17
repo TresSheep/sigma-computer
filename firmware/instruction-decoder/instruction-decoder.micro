@@ -1,0 +1,65 @@
+; "write" sends a write pulse on the control bus
+; "read" sends a read pulse on the control bus
+; "exec" pulses the clock
+
+; Internal commands
+; "call" calls a function
+; "ret" returns from the function
+; "je" jumps if the "read" 1-bit register is set
+
+; A demux is connected to the inputs and a mux is connected to the outputs. So a register can be both read or write
+
+.data
+
+    ; register mapping on the bus. Total of 16 wires
+    READ: 0x01 ; read is wire 0
+    WRITE: 0x02 ; write is wire 1.
+    MUX1: 0x04 ; mux 1 is wire 2
+    REGISTER_A: 0x04 ; wire 2 is active and 000 through lines 3, 4 and 5
+    REGISTER_B: 0x0C
+    REGISTER_C: 0x14
+    REGISTER_D: 0x1C
+
+    EIGHT_BIT_MODE_L: 0x38 ; wire 6. This chooses eight bit mode. The lower half.
+    EIGHT_BIT_MODE_H: 0x78 ; wire 7. This chooses eight bit mode. The higher half.
+
+    ; opcodes
+    ADD_R_R: 0x01
+
+.code
+
+; internal functions
+
+cmp:
+    write EIGHT_BIT_MODE_L
+    read ALU_A
+    exec
+    write REGISTER_IR_OPCODE ; from Memory
+    read ALU_B
+    write ALU_equ
+    read J_REG ; jump register. An 1-bit register
+    exec
+    ret
+
+main:
+    write EIGHT_BIT_MODE_L  ; set eight bit mode
+    write REGISTER_MR       ; open MR for writing and write 8-bits to the data bus
+    read REGISTER_IR        ; open IR reading 8-bits
+    exec ; pulse clock
+
+    write REGISTER_MR
+    read REGISTER_IR_ADDRESS
+    exec
+
+.loop
+    write ADD_R_R
+    call cmp
+    je add_r_r
+
+    jmp .loop
+
+add_r_r:
+    write EIGHT_BIT_MODE_H ; select the register part of IR
+    write REGISTER_IR
+    ret
+

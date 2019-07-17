@@ -1,0 +1,5 @@
+// 16-bit mode sigma
+
+main :: () -> void
+{
+}
