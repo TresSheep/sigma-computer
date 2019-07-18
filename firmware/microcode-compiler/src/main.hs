@@ -7,4 +7,4 @@ import Lexer (lexer)
 main :: IO ()
 main = do
     args <- getArgs
-    lexer (args !! 0)
+    mapM_ lexer args
