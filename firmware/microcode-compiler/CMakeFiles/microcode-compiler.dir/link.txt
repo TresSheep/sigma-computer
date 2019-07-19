@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/microcode-compiler.dir/src/ast.cpp.o CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o CMakeFiles/microcode-compiler.dir/src/main.cpp.o  -o bin/microcode-compiler 

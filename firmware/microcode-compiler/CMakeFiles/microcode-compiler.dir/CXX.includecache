@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast.cpp
+ast.h
+/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast.h
+
+/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast.h
+lexer.h
+/home/edvin/sigma-computer/firmware/microcode-compiler/src/lexer.h
+ast/expression.h
+/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/expression.h
+ast/statement.h
+/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/statement.h
+
+/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/expression.h
+
+/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/statement.h
+
+/home/edvin/sigma-computer/firmware/microcode-compiler/src/lexer.h
+string
+-
+fstream
+-
+sstream
+-
+iostream
+-
+vector
+-
+

@@ -1,0 +1,3 @@
+/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/rebuild_cache.dir
+/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir
+/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/edit_cache.dir

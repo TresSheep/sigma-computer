@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/sigma.dir/src/main.cpp.o  -o bin/sigma 

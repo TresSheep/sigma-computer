@@ -41,7 +41,7 @@ cmp:
     exec
     ret
 
-main:
+main: ; main is at adress 0x00
     write EIGHT_BIT_MODE_L  ; set eight bit mode
     write REGISTER_MR       ; open MR for writing and write 8-bits to the data bus
     read REGISTER_IR        ; open IR reading 8-bits
@@ -51,7 +51,7 @@ main:
     read REGISTER_IR_ADDRESS
     exec
 
-.loop
+.loop:
     write ADD_R_R
     call cmp
     je add_r_r
@@ -62,4 +62,3 @@ add_r_r:
     write EIGHT_BIT_MODE_H ; select the register part of IR
     write REGISTER_IR
     ret
-
