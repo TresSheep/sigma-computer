@@ -70,9 +70,100 @@ CMakeFiles/microcode-compiler.dir/src/ast.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/microcode-compiler.dir/src/ast.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast.cpp -o CMakeFiles/microcode-compiler.dir/src/ast.cpp.s
 
+CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o: CMakeFiles/microcode-compiler.dir/flags.make
+CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o: src/ast/call.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o -c /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/call.cpp
+
+CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/call.cpp > CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.i
+
+CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/call.cpp -o CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.s
+
+CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o: CMakeFiles/microcode-compiler.dir/flags.make
+CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o: src/ast/label.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o -c /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/label.cpp
+
+CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/label.cpp > CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.i
+
+CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/label.cpp -o CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.s
+
+CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o: CMakeFiles/microcode-compiler.dir/flags.make
+CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o: src/ast/read.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o -c /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/read.cpp
+
+CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/read.cpp > CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.i
+
+CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/read.cpp -o CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.s
+
+CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o: CMakeFiles/microcode-compiler.dir/flags.make
+CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o: src/ast/ret.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o -c /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/ret.cpp
+
+CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/ret.cpp > CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.i
+
+CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/ret.cpp -o CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.s
+
+CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o: CMakeFiles/microcode-compiler.dir/flags.make
+CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o: src/ast/sublabel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o -c /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/sublabel.cpp
+
+CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/sublabel.cpp > CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.i
+
+CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/sublabel.cpp -o CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.s
+
+CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o: CMakeFiles/microcode-compiler.dir/flags.make
+CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o: src/ast/write.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o -c /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/write.cpp
+
+CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/write.cpp > CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.i
+
+CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/write.cpp -o CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.s
+
+CMakeFiles/microcode-compiler.dir/src/builder.cpp.o: CMakeFiles/microcode-compiler.dir/flags.make
+CMakeFiles/microcode-compiler.dir/src/builder.cpp.o: src/builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/microcode-compiler.dir/src/builder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/microcode-compiler.dir/src/builder.cpp.o -c /home/edvin/sigma-computer/firmware/microcode-compiler/src/builder.cpp
+
+CMakeFiles/microcode-compiler.dir/src/builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/microcode-compiler.dir/src/builder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edvin/sigma-computer/firmware/microcode-compiler/src/builder.cpp > CMakeFiles/microcode-compiler.dir/src/builder.cpp.i
+
+CMakeFiles/microcode-compiler.dir/src/builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/microcode-compiler.dir/src/builder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edvin/sigma-computer/firmware/microcode-compiler/src/builder.cpp -o CMakeFiles/microcode-compiler.dir/src/builder.cpp.s
+
 CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o: CMakeFiles/microcode-compiler.dir/flags.make
 CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o: src/lexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o -c /home/edvin/sigma-computer/firmware/microcode-compiler/src/lexer.cpp
 
 CMakeFiles/microcode-compiler.dir/src/lexer.cpp.i: cmake_force
@@ -85,7 +176,7 @@ CMakeFiles/microcode-compiler.dir/src/lexer.cpp.s: cmake_force
 
 CMakeFiles/microcode-compiler.dir/src/main.cpp.o: CMakeFiles/microcode-compiler.dir/flags.make
 CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/microcode-compiler.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/microcode-compiler.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/microcode-compiler.dir/src/main.cpp.o -c /home/edvin/sigma-computer/firmware/microcode-compiler/src/main.cpp
 
 CMakeFiles/microcode-compiler.dir/src/main.cpp.i: cmake_force
@@ -99,6 +190,13 @@ CMakeFiles/microcode-compiler.dir/src/main.cpp.s: cmake_force
 # Object files for target microcode-compiler
 microcode__compiler_OBJECTS = \
 "CMakeFiles/microcode-compiler.dir/src/ast.cpp.o" \
+"CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o" \
+"CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o" \
+"CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o" \
+"CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o" \
+"CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o" \
+"CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o" \
+"CMakeFiles/microcode-compiler.dir/src/builder.cpp.o" \
 "CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o" \
 "CMakeFiles/microcode-compiler.dir/src/main.cpp.o"
 
@@ -106,11 +204,18 @@ microcode__compiler_OBJECTS = \
 microcode__compiler_EXTERNAL_OBJECTS =
 
 bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/src/ast.cpp.o
+bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o
+bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o
+bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o
+bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o
+bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o
+bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o
+bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/src/builder.cpp.o
 bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o
 bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/src/main.cpp.o
 bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/build.make
 bin/microcode-compiler: CMakeFiles/microcode-compiler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable bin/microcode-compiler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable bin/microcode-compiler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/microcode-compiler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

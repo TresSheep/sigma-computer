@@ -4,15 +4,63 @@
 CMakeFiles/microcode-compiler.dir/src/ast.cpp.o
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast.cpp
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/call.h
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/expression.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/label.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/read.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/ret.h
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/statement.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/sublabel.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/write.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/builder.h
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/lexer.h
+CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/call.cpp
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/call.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/expression.h
+ src/builder.h
+CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/expression.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/label.cpp
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/label.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/statement.h
+ src/builder.h
+CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/expression.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/read.cpp
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/read.h
+ src/builder.h
+CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/expression.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/ret.cpp
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/ret.h
+ src/builder.h
+CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/expression.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/sublabel.cpp
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/sublabel.h
+ src/builder.h
+CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/expression.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/write.cpp
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/write.h
+ src/builder.h
+CMakeFiles/microcode-compiler.dir/src/builder.cpp.o
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/builder.cpp
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/builder.h
 CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/lexer.cpp
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/lexer.h
 CMakeFiles/microcode-compiler.dir/src/main.cpp.o
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/call.h
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/expression.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/label.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/read.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/ret.h
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/statement.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/sublabel.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/write.h
+ /home/edvin/sigma-computer/firmware/microcode-compiler/src/builder.h
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/lexer.h
  /home/edvin/sigma-computer/firmware/microcode-compiler/src/main.cpp

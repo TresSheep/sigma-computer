@@ -1,11 +1,11 @@
 ; "write" sends a write pulse on the control bus
 ; "read" sends a read pulse on the control bus
-; "exec" pulses the clock
 
 ; Internal commands
 ; "call" calls a function
 ; "ret" returns from the function
 ; "je" jumps if the "read" 1-bit register is set
+; "exec" pulses the clock
 
 ; A demux is connected to the inputs and a mux is connected to the outputs. So a register can be both read or write
 
@@ -22,7 +22,7 @@
 
     EIGHT_BIT_MODE_L: 0x38 ; wire 6. This chooses eight bit mode. The lower half.
     EIGHT_BIT_MODE_H: 0x78 ; wire 7. This chooses eight bit mode. The higher half.
-
+    
     ; opcodes
     ADD_R_R: 0x01
 
@@ -30,35 +30,40 @@
 
 ; internal functions
 
-cmp:
-    write EIGHT_BIT_MODE_L
-    read ALU_A
-    exec
-    write REGISTER_IR_OPCODE ; from Memory
-    read ALU_B
-    write ALU_equ
-    read J_REG ; jump register. An 1-bit register
-    exec
+exec:
+    ; pulse the clock
     ret
 
-main: ; main is at adress 0x00
-    write EIGHT_BIT_MODE_L  ; set eight bit mode
-    write REGISTER_MR       ; open MR for writing and write 8-bits to the data bus
-    read REGISTER_IR        ; open IR reading 8-bits
-    exec ; pulse clock
+cmp:
+    ;write EIGHT_BIT_MODE_L
+    ;read ALU_A
+    ;call exec
+    ;write REGISTER_IR_OPCODE ; from Memory
+    ;read ALU_B
+    ;write ALU_equ
+    ;read J_REG ; jump register. An 1-bit register
+    ;call exec
+    ret
 
-    write REGISTER_MR
-    read REGISTER_IR_ADDRESS
-    exec
-
-.loop:
-    write ADD_R_R
-    call cmp
-    je add_r_r
-
-    jmp .loop
+; opcodes
 
 add_r_r:
     write EIGHT_BIT_MODE_H ; select the register part of IR
-    write REGISTER_IR
+    ;write REGISTER_IR
     ret
+
+; main function
+
+main: ; main is at adress 0x00
+    write EIGHT_BIT_MODE_L  ; set eight bit mode
+    ;write REGISTER_MR       ; open MR for writing and write 8-bits to the data bus
+    ;read REGISTER_IR        ; open IR reading 8-bits
+    call exec ; pulse clock
+
+    ;write REGISTER_MR
+    ;read REGISTER_IR_ADDRESS
+    call exec
+
+    ;write ADD_R_R
+    call cmp
+    ; je add_r_r

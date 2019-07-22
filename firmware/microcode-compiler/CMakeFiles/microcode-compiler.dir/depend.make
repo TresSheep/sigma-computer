@@ -3,16 +3,64 @@
 
 CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/ast.cpp
 CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/ast.h
+CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/ast/call.h
 CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/ast/expression.h
+CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/ast/label.h
+CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/ast/read.h
+CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/ast/ret.h
 CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/ast/statement.h
+CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/ast/sublabel.h
+CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/ast/write.h
+CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/builder.h
 CMakeFiles/microcode-compiler.dir/src/ast.cpp.o: src/lexer.h
+
+CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o: src/ast/call.cpp
+CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o: src/ast/call.h
+CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o: src/ast/expression.h
+CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o: src/builder.h
+
+CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o: src/ast/expression.h
+CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o: src/ast/label.cpp
+CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o: src/ast/label.h
+CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o: src/ast/statement.h
+CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o: src/builder.h
+
+CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o: src/ast/expression.h
+CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o: src/ast/read.cpp
+CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o: src/ast/read.h
+CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o: src/builder.h
+
+CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o: src/ast/expression.h
+CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o: src/ast/ret.cpp
+CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o: src/ast/ret.h
+CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o: src/builder.h
+
+CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o: src/ast/expression.h
+CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o: src/ast/sublabel.cpp
+CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o: src/ast/sublabel.h
+CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o: src/builder.h
+
+CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o: src/ast/expression.h
+CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o: src/ast/write.cpp
+CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o: src/ast/write.h
+CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o: src/builder.h
+
+CMakeFiles/microcode-compiler.dir/src/builder.cpp.o: src/builder.cpp
+CMakeFiles/microcode-compiler.dir/src/builder.cpp.o: src/builder.h
 
 CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o: src/lexer.cpp
 CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o: src/lexer.h
 
 CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/ast.h
+CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/ast/call.h
 CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/ast/expression.h
+CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/ast/label.h
+CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/ast/read.h
+CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/ast/ret.h
 CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/ast/statement.h
+CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/ast/sublabel.h
+CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/ast/write.h
+CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/builder.h
 CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/lexer.h
 CMakeFiles/microcode-compiler.dir/src/main.cpp.o: src/main.cpp
 

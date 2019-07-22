@@ -18,10 +18,8 @@ enum token_type
  CODE_SECTION,
  WRITE_CMD,
  READ_CMD,
- EXEC_CMD,
  RET_CMD,
  JMP_CMD,
- JE_CMD,
  CALL_CMD
 };
 

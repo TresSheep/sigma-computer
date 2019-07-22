@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/edvin/sigma-computer/firmware/microcode-compiler
 CMakeFiles/microcode-compiler.dir/all:
 	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/depend
 	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=1,2,3,4 "Built target microcode-compiler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target microcode-compiler"
 .PHONY : CMakeFiles/microcode-compiler.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/microcode-compiler.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/microcode-compiler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/microcode-compiler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles 0
 .PHONY : CMakeFiles/microcode-compiler.dir/rule

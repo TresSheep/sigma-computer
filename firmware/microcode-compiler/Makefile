@@ -150,6 +150,195 @@ src/ast.cpp.s:
 	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast.cpp.s
 .PHONY : src/ast.cpp.s
 
+src/ast/call.o: src/ast/call.cpp.o
+
+.PHONY : src/ast/call.o
+
+# target to build an object file
+src/ast/call.cpp.o:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o
+.PHONY : src/ast/call.cpp.o
+
+src/ast/call.i: src/ast/call.cpp.i
+
+.PHONY : src/ast/call.i
+
+# target to preprocess a source file
+src/ast/call.cpp.i:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.i
+.PHONY : src/ast/call.cpp.i
+
+src/ast/call.s: src/ast/call.cpp.s
+
+.PHONY : src/ast/call.s
+
+# target to generate assembly for a file
+src/ast/call.cpp.s:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.s
+.PHONY : src/ast/call.cpp.s
+
+src/ast/label.o: src/ast/label.cpp.o
+
+.PHONY : src/ast/label.o
+
+# target to build an object file
+src/ast/label.cpp.o:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o
+.PHONY : src/ast/label.cpp.o
+
+src/ast/label.i: src/ast/label.cpp.i
+
+.PHONY : src/ast/label.i
+
+# target to preprocess a source file
+src/ast/label.cpp.i:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.i
+.PHONY : src/ast/label.cpp.i
+
+src/ast/label.s: src/ast/label.cpp.s
+
+.PHONY : src/ast/label.s
+
+# target to generate assembly for a file
+src/ast/label.cpp.s:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.s
+.PHONY : src/ast/label.cpp.s
+
+src/ast/read.o: src/ast/read.cpp.o
+
+.PHONY : src/ast/read.o
+
+# target to build an object file
+src/ast/read.cpp.o:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o
+.PHONY : src/ast/read.cpp.o
+
+src/ast/read.i: src/ast/read.cpp.i
+
+.PHONY : src/ast/read.i
+
+# target to preprocess a source file
+src/ast/read.cpp.i:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.i
+.PHONY : src/ast/read.cpp.i
+
+src/ast/read.s: src/ast/read.cpp.s
+
+.PHONY : src/ast/read.s
+
+# target to generate assembly for a file
+src/ast/read.cpp.s:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.s
+.PHONY : src/ast/read.cpp.s
+
+src/ast/ret.o: src/ast/ret.cpp.o
+
+.PHONY : src/ast/ret.o
+
+# target to build an object file
+src/ast/ret.cpp.o:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o
+.PHONY : src/ast/ret.cpp.o
+
+src/ast/ret.i: src/ast/ret.cpp.i
+
+.PHONY : src/ast/ret.i
+
+# target to preprocess a source file
+src/ast/ret.cpp.i:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.i
+.PHONY : src/ast/ret.cpp.i
+
+src/ast/ret.s: src/ast/ret.cpp.s
+
+.PHONY : src/ast/ret.s
+
+# target to generate assembly for a file
+src/ast/ret.cpp.s:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.s
+.PHONY : src/ast/ret.cpp.s
+
+src/ast/sublabel.o: src/ast/sublabel.cpp.o
+
+.PHONY : src/ast/sublabel.o
+
+# target to build an object file
+src/ast/sublabel.cpp.o:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o
+.PHONY : src/ast/sublabel.cpp.o
+
+src/ast/sublabel.i: src/ast/sublabel.cpp.i
+
+.PHONY : src/ast/sublabel.i
+
+# target to preprocess a source file
+src/ast/sublabel.cpp.i:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.i
+.PHONY : src/ast/sublabel.cpp.i
+
+src/ast/sublabel.s: src/ast/sublabel.cpp.s
+
+.PHONY : src/ast/sublabel.s
+
+# target to generate assembly for a file
+src/ast/sublabel.cpp.s:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.s
+.PHONY : src/ast/sublabel.cpp.s
+
+src/ast/write.o: src/ast/write.cpp.o
+
+.PHONY : src/ast/write.o
+
+# target to build an object file
+src/ast/write.cpp.o:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o
+.PHONY : src/ast/write.cpp.o
+
+src/ast/write.i: src/ast/write.cpp.i
+
+.PHONY : src/ast/write.i
+
+# target to preprocess a source file
+src/ast/write.cpp.i:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.i
+.PHONY : src/ast/write.cpp.i
+
+src/ast/write.s: src/ast/write.cpp.s
+
+.PHONY : src/ast/write.s
+
+# target to generate assembly for a file
+src/ast/write.cpp.s:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.s
+.PHONY : src/ast/write.cpp.s
+
+src/builder.o: src/builder.cpp.o
+
+.PHONY : src/builder.o
+
+# target to build an object file
+src/builder.cpp.o:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/builder.cpp.o
+.PHONY : src/builder.cpp.o
+
+src/builder.i: src/builder.cpp.i
+
+.PHONY : src/builder.i
+
+# target to preprocess a source file
+src/builder.cpp.i:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/builder.cpp.i
+.PHONY : src/builder.cpp.i
+
+src/builder.s: src/builder.cpp.s
+
+.PHONY : src/builder.s
+
+# target to generate assembly for a file
+src/builder.cpp.s:
+	$(MAKE) -f CMakeFiles/microcode-compiler.dir/build.make CMakeFiles/microcode-compiler.dir/src/builder.cpp.s
+.PHONY : src/builder.cpp.s
+
 src/lexer.o: src/lexer.cpp.o
 
 .PHONY : src/lexer.o
@@ -216,6 +405,27 @@ help:
 	@echo "... src/ast.o"
 	@echo "... src/ast.i"
 	@echo "... src/ast.s"
+	@echo "... src/ast/call.o"
+	@echo "... src/ast/call.i"
+	@echo "... src/ast/call.s"
+	@echo "... src/ast/label.o"
+	@echo "... src/ast/label.i"
+	@echo "... src/ast/label.s"
+	@echo "... src/ast/read.o"
+	@echo "... src/ast/read.i"
+	@echo "... src/ast/read.s"
+	@echo "... src/ast/ret.o"
+	@echo "... src/ast/ret.i"
+	@echo "... src/ast/ret.s"
+	@echo "... src/ast/sublabel.o"
+	@echo "... src/ast/sublabel.i"
+	@echo "... src/ast/sublabel.s"
+	@echo "... src/ast/write.o"
+	@echo "... src/ast/write.i"
+	@echo "... src/ast/write.s"
+	@echo "... src/builder.o"
+	@echo "... src/builder.i"
+	@echo "... src/builder.s"
 	@echo "... src/lexer.o"
 	@echo "... src/lexer.i"
 	@echo "... src/lexer.s"

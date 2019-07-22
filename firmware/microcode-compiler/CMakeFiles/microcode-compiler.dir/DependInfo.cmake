@@ -5,6 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast.cpp" "/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir/src/ast.cpp.o"
+  "/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/call.cpp" "/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir/src/ast/call.cpp.o"
+  "/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/label.cpp" "/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir/src/ast/label.cpp.o"
+  "/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/read.cpp" "/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir/src/ast/read.cpp.o"
+  "/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/ret.cpp" "/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir/src/ast/ret.cpp.o"
+  "/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/sublabel.cpp" "/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir/src/ast/sublabel.cpp.o"
+  "/home/edvin/sigma-computer/firmware/microcode-compiler/src/ast/write.cpp" "/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir/src/ast/write.cpp.o"
+  "/home/edvin/sigma-computer/firmware/microcode-compiler/src/builder.cpp" "/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir/src/builder.cpp.o"
   "/home/edvin/sigma-computer/firmware/microcode-compiler/src/lexer.cpp" "/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir/src/lexer.cpp.o"
   "/home/edvin/sigma-computer/firmware/microcode-compiler/src/main.cpp" "/home/edvin/sigma-computer/firmware/microcode-compiler/CMakeFiles/microcode-compiler.dir/src/main.cpp.o"
   )

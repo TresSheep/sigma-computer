@@ -107,14 +107,6 @@ void lexer::lex(std::string str)
       m_token_stream.push_back(token);
       position += 3;
     }
-    else if (str[position] == 'e' && str[position + 1] == 'x' && str[position + 2] == 'e' && str[position + 3] == 'c')
-    {
-      token_t token;
-      token.type = EXEC_CMD;
-      token.content = "exec";
-      m_token_stream.push_back(token);
-      position += 3;
-    }
     else if (str[position] == 'r' && str[position + 1] == 'e' && str[position + 2] == 't')
     {
       token_t token;
@@ -131,21 +123,13 @@ void lexer::lex(std::string str)
       m_token_stream.push_back(token);
       position += 2;
     }
-    else if (str[position] == 'j' && str[position + 1] == 'e')
-    {
-      token_t token;
-      token.type = JE_CMD;
-      token.content = "je";
-      m_token_stream.push_back(token);
-      position += 1;
-    }
-    else if (str[position] == 'c' && str[position + 1] == 'l' && str[position + 2] == 'l')
+    else if (str[position] == 'c' && str[position + 1] == 'a' && str[position + 2] == 'l' && str[position + 3] == 'l')
     {
       token_t token;
       token.type = CALL_CMD;
       token.content = "call";
       m_token_stream.push_back(token);
-      position += 2;
+      position += 3;
     }
     else if (IS_HIGH_ALPHA(str[position]) || IS_LOW_ALPHA(str[position])) {
       token_t token;

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include "lexer.h"
+#include "builder.h"
 #include "ast.h"
 
 int main (int argc, char** argv)
@@ -21,8 +22,10 @@ int main (int argc, char** argv)
   }
 
   lexer lex(filename);
-  ast syntax_tree(lex.get_token_stream());
+  builder b;
+  ast syntax_tree(lex.get_token_stream(), b);
   syntax_tree.parse();
   
+  b.save(filename + ".bin");
   return 0;
 }
