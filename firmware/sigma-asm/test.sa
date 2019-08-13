@@ -1,0 +1,10 @@
+.data:
+
+.code:
+
+main:
+    ldi regA, 10
+    ldi regB, 30
+    add regA, regB
+    push regA
+    pop regA

@@ -1,57 +1,132 @@
-; "write" sends a write pulse on the control bus
-; "read" sends a read pulse on the control bus
+; "write" sends a write pulse on the control bus 0x02
+; "read" sends a read pulse on the control bus 0x01
 
 ; Internal commands
-; "call" calls a function
-; "ret" returns from the function
-; "je" jumps if the "read" 1-bit register is set
-; "exec" pulses the clock
+; "call" inlines a function
 
 ; each address is located in opcode (x) the (y) contains information about the instruction being executed
 
-; A demux is connected to the inputs and a mux is connected to the outputs. So a register can be both read or write
+; every write-demux has the same select bits. Same with read.
+
+; connections
+
+; read bit		0x01
+; write bit		0x02
+; demux1_write		0x04
+; bit 0 demux1		0x08
+; bit 1 demux1		0x10
+; bit 2 demux1		0x20
+; demux2_read		0x40
+; bit 0 demux2		0x80
+; bit 1 demux2		0x100
+; bit 2 demux2		0x200
+; demux1_high		0x400
+; demux2_high		0x800
+
+; demux1_write address	0x04		w
+; demux1_write:		address:	type:
+;     regA_low_out	0x04		w
+;     regB_low_out	0x0C		w
+;     regC_low_out	0x14		w
+;     regD_low_out	0x1C		w
+;     regE_low_out	0x24		w
+;     regF_low_out	0x2C		w
+;     n/a		0x34		w
+;     n/a		0x3C		w
+
+; demux2_read address	0x40		r
+; demux2_read:		address:	type:
+;     regA_low_in	0x40		r
+;     regB_low_in	0xC0		r
+;     regC_low_in	0x140		r
+;     regD_low_in	0x1C0		r
+;     regE_low_in	0x240		r
+;     regF_low_in	0x2C0		r
+;     n/a		0x340		r
+;     n/a		0x3C0		r
+
+; demux1_high address	0x400		w
+; demux1_high:		address:	type:
+;     regA_high_out	0x400		w
+;     regB_high_out	0x408		w
+;     regC_high_out	0x410		w
+;     regD_high_out	0x418		w
+;     regE_high_out	0x420		w
+;     regF_high_out	0x428		w
+;     n/a		0x430		w
+;     n/a		0x438		w
+
+; demux2_high address	0x800		r
+; demux2_high:		address:	type:
+;     regA_high_in	0x800		r
+;     regB_high_in	0x880		r
+;     regC_high_in	0x900		r
+;     regD_high_in	0x980		r
+;     regE_high_in	0xA00		r
+;     regF_high_in	0xA80		r
+;     n/a		0xB00		r
+;     n/a		0xB80		r
 
 .data
 
     ; register mapping on the bus. Total of 16 wires
-    READ: 0x01 ; read is wire 0
-    WRITE: 0x02 ; write is wire 1.
-    MUX1: 0x04 ; mux 1 is wire 2
-    REGISTER_A: 0x04 ; wire 2 is active and 000 through lines 3, 4 and 5
-    REGISTER_B: 0x0C
-    REGISTER_C: 0x14
-    REGISTER_D: 0x1C
+    REG_A_OUT: 	        0x404
+    REG_B_OUT:	        0x40C
+    REG_C_OUT:	        0x414
+    REG_D_OUT:	        0x41C
+    REG_E_OUT:		0x424
+    REG_F_OUT:		0x42C
 
-    EIGHT_BIT_MODE_L: 0x38 ; wire 6. This chooses eight bit mode. The lower half.
-    EIGHT_BIT_MODE_H: 0x78 ; wire 7. This chooses eight bit mode. The higher half.
+    REG_A_IN: 	        0x
+    REG_B_IN:	        0x
+    REG_C_IN:	        0x
+    REG_D_IN:	        0x
+    REG_E_IN:		0x
+    REG_F_IN:		0x
 
+    REG_A_LOW_OUT:  	0x04
+    REG_B_LOW_OUT:  	0x0C
+    REG_C_LOW_OUT:  	0x14
+    REG_D_LOW_OUT:  	0x1C
+    REG_E_LOW_OUT:  	0x24
+    REG_F_LOW_OUT:  	0x2C
+
+    REG_A_LOW_IN:  	0x40
+    REG_B_LOW_IN:  	0xC0
+    REG_C_LOW_IN:  	0x140
+    REG_D_LOW_IN:  	0x1C0
+    REG_E_LOW_IN:  	0x240
+    REG_F_LOW_IN:  	0x2C0
+
+    REG_A_HIGH_OUT:  	0x400
+    REG_B_HIGH_OUT:  	0x408
+    REG_C_HIGH_OUT:  	0x410
+    REG_D_HIGH_OUT:  	0x418
+    REG_E_HIGH_OUT:  	0x420
+    REG_F_HIGH_OUT:  	0x428
+
+    REG_A_HIGH_IN:  	0x800
+    REG_B_HIGH_IN:  	0x880
+    REG_C_HIGH_IN:  	0x900
+    REG_D_HIGH_IN:  	0x980
+    REG_E_HIGH_IN:  	0xA80
+    REG_F_HIGH_IN:  	0xB00
+    
 .code
 
 ; internal functions
 
 pulse_clk:
     ; pulse the clock
-    ret
 
-; main
-
-main:
-    ; FETCH
-
-    ; main is located at address 0x00 and is at address space x bit 1
-    ; fetch the opcode and store it in the instruction register along with its address (24-bits)
-    ;write MEMORY_REGISTER
-    ;read INSTRUCTION_REGISTER
-    ;call pulse_clk
-    ;write INSTRUCTION_REGISTER_OPCODE
-    ;read INSTRUCTION_DECODER
-    ;call pulse_clk
-
-    ; get address space y (higher 8-bits + 1) from opcode address x (lower 8-bits + 1)
+fetch:
+    write MEM_REG
+    read I_REG
+    
     
 ; opcodes
 
-[0x01] ; address is relative +1 bit for main
-add_r_r:
-
-; 0x00 is written as end byte
+[0x01] ; add_reg_reg is at memory address (x) 0x01
+add_reg_reg:
+    REG_A
+    REG_B

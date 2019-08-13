@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name 74HC253)(type Legacy)(uri ${KIPRJMOD}/74HC253.lib)(options "")(descr ""))
+  (lib (name Additional74)(type Legacy)(uri ${KIPRJMOD}/Additional74.lib)(options "")(descr ""))
+  (lib (name General)(type Legacy)(uri ${KIPRJMOD}/General.lib)(options "")(descr ""))
+)

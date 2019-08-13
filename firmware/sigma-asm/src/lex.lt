@@ -1,0 +1,33 @@
+// Lexer section
+
+data_section   ".data"
+code_section   ".code"
+dot            "."
+function_start ":"
+separator      ","
+
+// Keywords
+load_into      "ldi"
+addition       "add"
+push_stack     "push"
+pop_stack      "pop"
+
+identifier     "[A-Z][a-z]*[0-9]"
+number         "[0-9]"
+
+<--->
+
+// AST section
+
+main:
+    load_into identifier separator number ()
+        create load_into ($2 $4)
+
+    addition identifier separator identifier ()
+        create addition ($2 $4)
+
+    push_stack identifier ()
+        create push_stack ($2)
+
+    pop_stack identifier ()
+        create pop_stack ($2)
