@@ -1,0 +1,260 @@
+EESchema Schematic File Version 4
+LIBS:sigma-computer-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	11150 6500 11150 500 
+Wire Wire Line
+	11200 500  11200 6500
+Wire Wire Line
+	11100 500  11100 6500
+Wire Wire Line
+	11050 6500 11050 500 
+Wire Wire Line
+	11000 6500 11000 500 
+Wire Wire Line
+	10950 500  10950 6500
+Wire Wire Line
+	10900 500  10900 6500
+Wire Wire Line
+	10850 6500 10850 500 
+Wire Wire Line
+	10750 6500 10750 500 
+Wire Wire Line
+	10800 500  10800 6500
+Wire Wire Line
+	10700 500  10700 6500
+Wire Wire Line
+	10650 6500 10650 500 
+Wire Wire Line
+	10600 6500 10600 500 
+Wire Wire Line
+	10550 500  10550 6500
+Wire Wire Line
+	10500 500  10500 6500
+Wire Wire Line
+	10450 6500 10450 500 
+$Comp
+L Memory_Flash:SST39SF010 U?
+U 1 1 5D2B77F7
+P 2650 5000
+F 0 "U?" H 2650 6481 50  0000 C CNN
+F 1 "SST39SF010" H 2650 6390 50  0000 C CNN
+F 2 "" H 2650 5300 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 2650 5300 50  0001 C CNN
+	1    2650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L General:Demux1 U?
+U 1 1 5D48BF1A
+P 7450 1450
+F 0 "U?" H 8219 1401 50  0000 L CNN
+F 1 "Demux1" H 8219 1310 50  0000 L CNN
+F 2 "" H 7750 500 50  0001 C CNN
+F 3 "" H 7750 500 50  0001 C CNN
+	1    7450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_Flash:SST39SF010 U?
+U 1 1 5D28F473
+P 2650 2200
+F 0 "U?" H 2650 3681 50  0000 C CNN
+F 1 "SST39SF010" H 2650 3590 50  0000 C CNN
+F 2 "" H 2650 2500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 2650 2500 50  0001 C CNN
+	1    2650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Additional74:CD74HC137 U?
+U 1 1 5D4C8F5E
+P 5900 1750
+F 0 "U?" H 5900 2625 50  0000 C CNN
+F 1 "CD74HC137" H 5900 2534 50  0000 C CNN
+F 2 "" H 5900 1450 50  0001 C CNN
+F 3 "" H 5900 1450 50  0001 C CNN
+	1    5900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1200 6350 1200
+Wire Wire Line
+	6350 1200 6350 900 
+Wire Wire Line
+	6350 900  7250 900 
+Wire Wire Line
+	6250 1300 6400 1300
+Wire Wire Line
+	6400 1300 6400 1100
+Wire Wire Line
+	6400 1100 7250 1100
+Wire Wire Line
+	6250 1400 6450 1400
+Wire Wire Line
+	6450 1400 6450 1300
+Wire Wire Line
+	6450 1300 7250 1300
+Wire Wire Line
+	6250 1500 7250 1500
+Wire Wire Line
+	6250 1600 7000 1600
+Wire Wire Line
+	7000 1600 7000 1700
+Wire Wire Line
+	7000 1700 7250 1700
+Wire Wire Line
+	6250 1700 6950 1700
+Wire Wire Line
+	6950 1700 6950 1900
+Wire Wire Line
+	6950 1900 7250 1900
+Wire Wire Line
+	6250 1800 6900 1800
+Wire Wire Line
+	6900 1800 6900 2100
+Wire Wire Line
+	6900 2100 7250 2100
+Wire Wire Line
+	5550 1700 5450 1700
+Wire Wire Line
+	5450 1700 5450 2300
+Wire Wire Line
+	5450 2300 7250 2300
+$Comp
+L Additional74:CD74HC137 U?
+U 1 1 5D4D330B
+P 5900 3250
+F 0 "U?" H 5900 4125 50  0000 C CNN
+F 1 "CD74HC137" H 5900 4034 50  0000 C CNN
+F 2 "" H 5900 2950 50  0001 C CNN
+F 3 "" H 5900 2950 50  0001 C CNN
+	1    5900 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1200 5350 1200
+Wire Wire Line
+	5350 1200 5350 1600
+Wire Wire Line
+	5350 1600 5550 1600
+Wire Wire Line
+	5350 1600 5350 3100
+Wire Wire Line
+	5350 3100 5550 3100
+Connection ~ 5350 1600
+Wire Wire Line
+	6250 2700 6500 2700
+Wire Wire Line
+	6500 2700 6500 800 
+Wire Wire Line
+	6500 800  7250 800 
+Wire Wire Line
+	6250 2800 6550 2800
+Wire Wire Line
+	6550 2800 6550 1000
+Wire Wire Line
+	6550 1000 7250 1000
+Wire Wire Line
+	6250 2900 6600 2900
+Wire Wire Line
+	6600 2900 6600 1200
+Wire Wire Line
+	6600 1200 7250 1200
+Wire Wire Line
+	6250 3000 6650 3000
+Wire Wire Line
+	6650 3000 6650 1400
+Wire Wire Line
+	6650 1400 7250 1400
+Wire Wire Line
+	6250 3100 7050 3100
+Wire Wire Line
+	7050 3100 7050 1600
+Wire Wire Line
+	7050 1600 7250 1600
+Wire Wire Line
+	6250 3200 7100 3200
+Wire Wire Line
+	7100 3200 7100 1800
+Wire Wire Line
+	7100 1800 7250 1800
+Wire Wire Line
+	6250 3300 7150 3300
+Wire Wire Line
+	7150 3300 7150 2000
+Wire Wire Line
+	7150 2000 7250 2000
+Wire Wire Line
+	5550 3200 5350 3200
+Wire Wire Line
+	5350 3200 5350 3500
+Wire Wire Line
+	5350 3500 7200 3500
+Wire Wire Line
+	7200 3500 7200 2200
+Wire Wire Line
+	7200 2200 7250 2200
+Wire Wire Line
+	3250 1300 3400 1300
+Wire Wire Line
+	3400 1300 3400 1100
+Wire Wire Line
+	3400 1100 5550 1100
+Wire Wire Line
+	3250 1400 3450 1400
+Wire Wire Line
+	3450 1400 3450 1150
+Wire Wire Line
+	3450 1150 5550 1150
+Wire Wire Line
+	5550 1150 5550 1200
+Wire Wire Line
+	3250 1500 3500 1500
+Wire Wire Line
+	3500 1500 3500 1250
+Wire Wire Line
+	3500 1250 5550 1250
+Wire Wire Line
+	5550 1250 5550 1300
+Wire Wire Line
+	3250 1600 3500 1600
+Wire Wire Line
+	3500 1600 3500 2600
+Wire Wire Line
+	3500 2600 5550 2600
+Wire Wire Line
+	3250 1700 3450 1700
+Wire Wire Line
+	3450 1700 3450 2700
+Wire Wire Line
+	3450 2700 5550 2700
+Wire Wire Line
+	3250 3800 3250 2800
+Wire Wire Line
+	3250 2800 5550 2800
+$Comp
+L Additional74:CD74HC137 U?
+U 1 1 5D4BF52B
+P 5900 4450
+F 0 "U?" H 5900 5325 50  0000 C CNN
+F 1 "CD74HC137" H 5900 5234 50  0000 C CNN
+F 2 "" H 5900 4150 50  0001 C CNN
+F 3 "" H 5900 4150 50  0001 C CNN
+	1    5900 4450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
