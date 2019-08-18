@@ -26,21 +26,15 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 8200 2600 50 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11150 6500 11150 500 
+	11100 500  11100 4400
 Wire Wire Line
-	11200 500  11200 6500
+	11050 6500 11050 4300
 Wire Wire Line
-	11100 500  11100 6500
+	11000 6500 11000 4200
 Wire Wire Line
-	11050 6500 11050 500 
+	10950 500  10950 4100
 Wire Wire Line
-	11000 6500 11000 500 
-Wire Wire Line
-	10950 500  10950 6500
-Wire Wire Line
-	10900 500  10900 6500
-Wire Wire Line
-	10850 6500 10850 500 
+	10900 500  10900 4000
 Wire Wire Line
 	10750 6500 10750 1700
 Wire Wire Line
@@ -108,4 +102,82 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 8200 5400 50 
 	1    8200 5100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	11150 6500 11150 4500
+Wire Wire Line
+	11200 500  11200 4600
+Wire Wire Line
+	10850 6500 10850 3900
+Wire Wire Line
+	8800 4600 11200 4600
+Connection ~ 11200 4600
+Wire Wire Line
+	11200 4600 11200 6500
+Wire Wire Line
+	8800 4500 11150 4500
+Connection ~ 11150 4500
+Wire Wire Line
+	11150 4500 11150 500 
+Wire Wire Line
+	8800 4400 11100 4400
+Connection ~ 11100 4400
+Wire Wire Line
+	11100 4400 11100 6500
+Wire Wire Line
+	8800 4300 11050 4300
+Connection ~ 11050 4300
+Wire Wire Line
+	11050 4300 11050 500 
+Wire Wire Line
+	8800 4200 11000 4200
+Connection ~ 11000 4200
+Wire Wire Line
+	11000 4200 11000 500 
+Wire Wire Line
+	8800 4100 10950 4100
+Connection ~ 10950 4100
+Wire Wire Line
+	10950 4100 10950 6500
+Wire Wire Line
+	8800 4000 10900 4000
+Connection ~ 10900 4000
+Wire Wire Line
+	10900 4000 10900 6500
+Wire Wire Line
+	8800 3900 10850 3900
+Connection ~ 10850 3900
+Wire Wire Line
+	10850 3900 10850 500 
+Wire Wire Line
+	1200 6500 1200 500 
+Wire Wire Line
+	1250 500  1250 6500
+Wire Wire Line
+	1150 500  1150 6500
+Wire Wire Line
+	1100 6500 1100 500 
+Wire Wire Line
+	1050 6500 1050 500 
+Wire Wire Line
+	1000 500  1000 6500
+Wire Wire Line
+	950  500  950  6500
+Wire Wire Line
+	900  6500 900  500 
+Wire Wire Line
+	800  6500 800  500 
+Wire Wire Line
+	850  500  850  6500
+Wire Wire Line
+	750  500  750  6500
+Wire Wire Line
+	700  6500 700  500 
+Wire Wire Line
+	650  6500 650  500 
+Wire Wire Line
+	600  500  600  6500
+Wire Wire Line
+	550  500  550  6500
+Wire Wire Line
+	500  6500 500  500 
 $EndSCHEMATC
