@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 11
+Sheet 10 10
 Title ""
 Date ""
 Rev ""
@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Memory_Flash:SST39SF010 U?
+L Memory_Flash:SST39SF010 U53
 U 1 1 5D29CFD9
 P 8200 2300
-F 0 "U?" H 8200 3781 50  0000 C CNN
+F 0 "U53" H 8200 3781 50  0000 C CNN
 F 1 "SST39SF010" H 8200 3690 50  0000 C CNN
 F 2 "" H 8200 2600 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 8200 2600 50  0001 C CNN
@@ -92,10 +92,10 @@ Connection ~ 10800 1800
 Wire Wire Line
 	10800 1800 10800 6500
 $Comp
-L Memory_Flash:SST39SF010 U?
+L Memory_Flash:SST39SF010 U54
 U 1 1 5D4D3771
 P 8200 5100
-F 0 "U?" H 8200 6581 50  0000 C CNN
+F 0 "U54" H 8200 6581 50  0000 C CNN
 F 1 "SST39SF010" H 8200 6490 50  0000 C CNN
 F 2 "" H 8200 5400 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 8200 5400 50  0001 C CNN

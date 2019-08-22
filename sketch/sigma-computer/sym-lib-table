@@ -3,4 +3,5 @@
   (lib (name Additional74)(type Legacy)(uri ${KIPRJMOD}/Additional74.lib)(options "")(descr ""))
   (lib (name General)(type Legacy)(uri ${KIPRJMOD}/General.lib)(options "")(descr ""))
   (lib (name SRAM)(type Legacy)(uri ${KIPRJMOD}/SRAM.lib)(options "")(descr ""))
+  (lib (name sigma-computer-rescue)(type Legacy)(uri ${KIPRJMOD}/sigma-computer-rescue.lib)(options "")(descr ""))
 )

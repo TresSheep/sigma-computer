@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 650  1550 1050 1250
+S 650  1550 2400 1250
 U 5D32333B
-F0 "Registers_A-C" 50
-F1 "Registers_A-C.sch" 50
+F0 "Registers_A-F" 50
+F1 "Registers_A-F.sch" 50
 $EndSheet
 $Sheet
 S 650  5100 2400 2550
@@ -35,13 +35,13 @@ Wire Notes Line
 Text Notes 1250 1500 0    404  ~ 0
 CPU
 $Sheet
-S 650  3000 2400 500 
+S 650  4400 2400 500 
 U 5D273310
 F0 "ALU" 50
 F1 "ALU.sch" 50
 $EndSheet
 $Sheet
-S 650  4400 2400 500 
+S 650  3000 2400 500 
 U 5D2739E4
 F0 "special-registers" 50
 F1 "special-registers.sch" 50
@@ -85,12 +85,6 @@ S 3200 1550 1750 6050
 U 5D28C0A7
 F0 "VGA" 50
 F1 "VGA.sch" 50
-$EndSheet
-$Sheet
-S 2000 1550 1050 1250
-U 5D28F068
-F0 "Registers_D-F" 50
-F1 "Registers_D-F.sch" 50
 $EndSheet
 $Sheet
 S 5100 4000 1800 750 
